@@ -1,0 +1,13 @@
+public class Price {
+    Public static void main(String[] args) {
+        double precioSinIVA = 82;
+        double porcentajeIVA = 21;
+        double precioConIVA = calcularPrecioConIVA(precioSinIVA, porcentajeIVA);
+        System.out.println("El precio con IVA es: " + precioConIVA);
+
+    }
+    static double calcularPrecioConIVA(double precioSinIVA, double porcentajeIVA) {
+        double precioConIVA = precioSinIVA * (1 + (porcentajeIVA / 100));
+        return precioConIVA;
+    }
+}
